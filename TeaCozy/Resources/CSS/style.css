@@ -1,0 +1,191 @@
+body {
+  font-family:helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/*Spacing navigation links and aoverriding default link colour*/
+a{
+  color:inherit;
+  padding-left: 20px;
+}
+
+/*Header block*/
+#header {display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  background-color: black;
+  z-index: 5;
+  top: -1px; /*Not sure why I have to do this but there was a gap showing above when scrolling!*/
+}
+
+#logo {
+  display: block;
+  max-height:50px;
+  width: auto;
+  padding-left: 10px;
+}
+
+#navigation {
+  width: 450px;
+  height: 69px;
+  margin-left: auto;
+}
+
+#navigation li{
+  display:inline;
+}
+
+/*Main block set to sit below fixed header and contain all other items*/
+#MainBlock {
+  position: relative;
+  top:62px; /*This is adjusted to work with the negative offset for fixed header. Done by trial and error!*/
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*Block to contain image and text re mission*/
+#MissionBlock {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+}
+
+#Mission {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+
+#Mission h2{
+  display: block;
+  text-align: center;
+  height: 38px
+  padding: 10px;
+}
+
+#Mission h4{
+  display: block;
+  text-align: center;
+  height: 25px;
+  padding: 10px;
+}
+
+/*Block to contain all items relating to teas*/
+#TeaBlock {
+  width:1000px;
+  height: 700px;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center; /*This operates on both the text and the blocks declared as inline-block*/
+}
+
+#TeaHeader {
+  width: 100%;
+  display: block;
+}
+
+#TeaHeader h2{
+  display: block;
+  text-align: center;
+  padding: 10px;
+
+}
+
+#TeaHeader h4{
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+/*These are the horozontal blocks with images and text below*/
+.Tea {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+}
+
+#Teas img {
+  width: 300px;
+  height: 200px;
+}
+
+#Teas span {
+  width:300px;
+  display: block;
+  text-align: center;
+  padding:5px;
+}
+
+/*Location Block to contain he three addresses blocks*/
+#LocationBlock {
+  display: block;
+  height: 500px;
+  width:1200px;
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  margin: 0 auto;
+  text-align: center;
+}
+
+#LocationBlock h2 {
+  padding-top: 70px;
+}
+
+/*The three address blocks*/
+.AddressBlock {
+    display: inline-block;
+    margin: 5px 20px;
+    width: 300px;
+    background-color: black;
+    opacity: 1;
+}
+
+.AddressBlock span {
+  display: block;
+  font-size: 20px; /*I've set this as text was wrapping*/
+  height: 25px;
+  margin: 22px;
+  text-align: center;
+}
+
+.AddressBlock h3 {
+  display: block;
+  padding: 10px;
+  margin: 30px; /*This seems to overlap with the next item for some reason*/
+  text-align: center;
+}
+
+/*Contact block!*/
+#ContactBlock {
+  display:block;
+  height:200px;
+  text-align: center;
+}
+
+#ContactBlock h2 {
+  padding:10px;
+}
+
+#ContactBlock h5 {
+  margin: 30.494px auto;
+}
+
+#ContactBlock span {
+  margin: 30.494px 0;
+  padding-left: 20px;
+  Float: left;
+
+}
